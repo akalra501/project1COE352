@@ -33,11 +33,11 @@ The code calculates the displacements, internal forces, and elongations of a spr
 3. Solve for displacements using SVD.
 4. Calculate elongations and internal forces.
 
-The system supports different boundary conditions: `Fixed-Free` and `Fixed-Fixed`.
+The system supports different boundary conditions: `Fixed-Free` and `Fixed-Fixed`. Discussion of the Free-Free boundary condition is at the end of readme file.
 
 ## Features
 - User-friendly interface for inputting parameters.
-- Robust SVD implementation for matrix decomposition.
+- SVD implementation for matrix decomposition.
 - Calculation of condition numbers to assess matrix stability.
 - Support for various spring-mass configurations.
 
