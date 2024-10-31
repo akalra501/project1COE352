@@ -1,4 +1,26 @@
-# Spring-Mass System SVD Solver
+## 1. General Singular Value Decomposition (SVD) Routine
+
+### Description
+The `custom_svd` function performs the Singular Value Decomposition of an \( N \times M \) matrix and calculates the following:
+
+- **Left singular vectors** \( U \)
+- **Diagonal matrix of singular values** \( S \)
+- **Transpose of the right singular vectors** \( V^T \)
+- **Condition number**, calculated using the ratio of the maximum and minimum singular values
+- **Matrix inverse**, computed only if the matrix is invertible (i.e., no zero singular values)
+
+If any singular values are zero, the function raises an error to indicate that the inverse does not exist.
+
+### Files
+- `custom_svd.py`: Contains the `custom_svd` function implementation.
+
+### Tests
+To test out SVD function, the matrix was defined in the file itself: [[1,7,6], [4, 19,22], [13,12,201]] 
+
+### Output
+![image](https://github.com/user-attachments/assets/1e9f6e04-655d-4188-9e82-b7cd3e3d4ff0)
+
+#2. Spring-Mass System SVD Solver
 
 This project implements a numerical solution for a spring-mass system using Singular Value Decomposition (SVD). The code calculates equilibrium displacements, internal stresses, and elongations of a spring-mass system based on user-defined parameters.
 
@@ -25,9 +47,3 @@ The system supports different boundary conditions: `Fixed-Free` and `Fixed-Fixed
 - Robust SVD implementation for matrix decomposition.
 - Calculation of condition numbers to assess matrix stability.
 - Support for various spring-mass configurations.
-
-## Installation
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/yourusername/spring-mass-svd-solver.git
-   cd spring-mass-svd-solver
