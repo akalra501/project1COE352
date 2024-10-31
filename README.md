@@ -22,7 +22,7 @@ To test out SVD function, the matrix was defined in the file itself: [[1,7,6], [
 
 As visible here, the results from out Custom SVD function, and NumPy's built in function are the same, proving that the custom SVD system works.
 
-#2. Spring-Mass System SVD Solver
+# 2. Spring-Mass System SVD Solver
 
 This project implements a numerical solution for a spring-mass system using Singular Value Decomposition (SVD). The code calculates equilibrium displacements, internal stresses, and elongations of a spring-mass system based on user-defined parameters.
 
