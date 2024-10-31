@@ -41,6 +41,8 @@ The system supports different boundary conditions: `Fixed-Free` and `Fixed-Fixed
 - Calculation of condition numbers to assess matrix stability.
 - Support for various spring-mass configurations.
 
+#### Note: All masses are in kilograms.
+
 ### Test
 For the purpose of testing our system, 3 springs and 3 masses were entered with one fixed boundary condition. Here is the output.
 
